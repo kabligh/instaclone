@@ -23,7 +23,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
-gem 'bootstrap', '~> 5.0.0.alpha3'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'jquery-rails'
 gem "aws-sdk-s3", require: false
 
 # Use Active Storage variant
