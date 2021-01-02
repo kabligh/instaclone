@@ -13,9 +13,9 @@ class PostsController < ApplicationController
       flash[:success] = "You post has been created."
       redirect_to @post
     else
-      flash[:alert] = 'Stop right there. You need an image to post.'
+      flash[:alert] = "Stop. You need an image to post."
       render :new
-    end 
+    end
   end
 
   def show

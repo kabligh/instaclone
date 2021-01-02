@@ -1,7 +1,7 @@
 require 'rails_helper.rb'
 
 feature 'Creating posts' do
-  
+
   scenario 'can create a post' do
     visit '/'
     click_link 'New post'
@@ -17,7 +17,7 @@ feature 'Creating posts' do
     click_link 'New post'
     fill_in 'Caption', with: 'No picture because YOLO'
     click_button 'Create Post'
-    expect(page).to have_content('Stop right there. You need an image to post.')
+    expect(page).to have_content('Stop. You need an image to post.')
   end
 
 end
