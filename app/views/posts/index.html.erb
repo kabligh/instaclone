@@ -1,3 +1,8 @@
 <h1>Instaclone</h1>
 
 <%= link_to 'New post', new_post_path %>
+
+<% @posts.each do |post| %>
+  <%= image_tag post.image %>
+  <%= post.caption %>
+<% end %>
